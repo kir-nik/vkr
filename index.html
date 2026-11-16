@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Грейферный перегружатель: литературный обзор ВКР</title>
+<meta name="description" content="Литературный обзор по теме ВКР «Вариантное проектирование грейферного перегружателя для речного порта». Никитин К. Л., ИММиТ СПбПУ.">
+<style>
+:root{--g:#39a935;--gd:#2b8228;--ink:#1d1d1b;--mut:#5a5a57;--line:#e2e4e1;--card:#f4f5f3;--bg:#ffffff;--w:1080px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Segoe UI",Roboto,Arial,sans-serif}
+a{color:var(--gd)}
+.wrap{max-width:var(--w);margin:0 auto;padding:0 20px}
+header.hero{background:var(--ink);color:#fff;padding:56px 0 44px;border-bottom:6px solid var(--g)}
+.hero .kicker{color:#9fd99c;font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px}
+.hero h1{font-size:clamp(26px,4.2vw,42px);line-height:1.2;margin:0 0 18px;max-width:900px}
+.hero .sub{font-size:18px;color:#d6d8d4;margin:0 0 26px;max-width:820px}
+.meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px 28px;font-size:15px;color:#d6d8d4;margin:0}
+.meta b{display:block;color:#fff;font-weight:600}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.btn{display:inline-block;padding:10px 18px;border-radius:6px;background:var(--g);color:#fff;text-decoration:none;font-weight:600;font-size:15px}
+.btn.ghost{background:transparent;border:1px solid #6f726d;color:#fff}
+.btn:hover{background:var(--gd)} .btn.ghost:hover{background:#2b2b29}
+nav.top{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--line)}
+nav.top .wrap{display:flex;gap:4px;overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav.top a{padding:14px 10px;color:var(--mut);text-decoration:none;font-size:15px}
+nav.top a:hover{color:var(--g)}
+section{padding:48px 0;border-bottom:1px solid var(--line)}
+h2{font-size:28px;line-height:1.25;margin:0 0 8px}
+h2 .n{color:var(--g);margin-right:10px}
+h3{font-size:20px;margin:28px 0 8px}
+.lead{color:var(--mut);margin:0 0 24px;max-width:800px}
+p{max-width:820px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin:20px 0}
+.card{background:var(--card);border-radius:10px;padding:18px 20px}
+.card h4{margin:0 0 6px;color:var(--gd);font-size:16px}
+.card p{margin:0;font-size:15.5px}
+.big{font-size:30px;font-weight:700;color:var(--g);line-height:1.1;margin-bottom:6px}
+.fig{margin:24px 0;text-align:center}
+.fig img{max-width:100%;height:auto;border:1px solid var(--line);border-radius:8px;background:#fff}
+.fig .legend{font-size:14px;color:var(--mut);margin:8px auto 2px;max-width:760px}
+.fig figcaption,.tbl figcaption{font-size:15px;color:var(--ink);font-weight:600;margin-top:6px}
+.tbl{margin:24px 0}
+.tbl figcaption{text-align:left;margin:0 0 8px}
+.scroll{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:15.5px}
+th{background:var(--g);color:#fff;text-align:left;padding:10px 12px;font-weight:600}
+td{padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:nth-child(even) td{background:var(--card)}
+td.first{font-weight:600}
+ol.num{counter-reset:c;list-style:none;padding:0;margin:16px 0}
+ol.num li{counter-increment:c;position:relative;padding:12px 16px 12px 58px;background:var(--card);border-radius:8px;margin-bottom:10px}
+ol.num li::before{content:counter(c);position:absolute;left:18px;top:8px;font-size:24px;font-weight:700;color:var(--g)}
+ul.tick{padding-left:22px} ul.tick li{margin:6px 0}
+.cite{text-decoration:none;font-weight:600}
+.viewer{background:var(--ink);border-radius:12px;padding:16px;margin-top:20px}
+.stage{position:relative;aspect-ratio:16/9;background:#000;border-radius:6px;overflow:hidden}
+.stage img{width:100%;height:100%;object-fit:contain;display:block}
+.ctrl{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:12px;color:#d6d8d4;font-size:15px}
+.ctrl button{background:var(--g);color:#fff;border:0;border-radius:6px;padding:9px 16px;font-size:15px;font-weight:600;cursor:pointer}
+.ctrl button:disabled{background:#4a4a48;cursor:default}
+.thumbs{display:flex;gap:8px;overflow-x:auto;margin-top:12px;padding-bottom:4px}
+.thumbs img{height:58px;border-radius:4px;opacity:.55;cursor:pointer;border:2px solid transparent}
+.thumbs img.on{opacity:1;border-color:var(--g)}
+.files{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px}
+.file{display:flex;gap:14px;align-items:center;background:var(--card);border-radius:10px;padding:16px 18px;text-decoration:none;color:var(--ink)}
+.file:hover{background:#e9f5e8}
+.ext{flex:none;width:52px;height:52px;border-radius:8px;background:var(--g);color:#fff;font-weight:700;display:flex;align-items:center;justify-content:center;font-size:14px}
+.file small{display:block;color:var(--mut)}
+ol.refs{padding-left:28px;font-size:15px} ol.refs li{margin:6px 0;overflow-wrap:anywhere;scroll-margin-top:70px} ol.refs li:target{background:#e9f5e8}
+footer{padding:28px 0 40px;color:var(--mut);font-size:14px}
+@media (max-width:760px){.grid2{grid-template-columns:1fr} section{padding:36px 0} body{font-size:16px} h2{font-size:24px}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<p class="kicker">Литературный обзор · глава 1 выпускной квалификационной работы</p>
+<h1>Вариантное проектирование грейферного перегружателя для речного порта</h1>
+<p class="sub">Обзор конструкций металлоконструкций перегружателей и методов их проектирования: коробчатая балка и ферма из прямоугольных труб, нормы, численные методы, сопротивление усталости сварных узлов.</p>
+<div class="meta">
+<div><b>Никитин Кирилл Леонидович</b>группа 3342302/50801</div>
+<div><b>ИММиТ, СПбПУ Петра Великого</b>Санкт-Петербург, 2026</div>
+<div><b>Научный руководитель</b>Соколов С. А.</div>
+</div>
+<div class="btns"><a class="btn" href="files/Nikitin_Literaturnyi_obzor.pdf" target="_blank">Реферат (PDF)</a><a class="btn ghost" href="#presentation">Презентация</a></div>
+</div></header>
+<nav class="top"><div class="wrap">
+<a href="#about">О работе</a><a href="#structure">Структура</a><a href="#norms">Нормы</a><a href="#constr">Конструкции</a><a href="#methods">Методы</a><a href="#patents">Патенты</a><a href="#results">Выводы и задачи</a><a href="#presentation">Презентация</a><a href="#files">Файлы</a><a href="#refs">Источники</a>
+</div></nav>
+
+<main>
+<section id="about"><div class="wrap">
+<h2><span class="n">01</span>Цель работы и исходные данные</h2>
+<p class="lead">В ВКР сравниваются два варианта металлоконструкции перегружателя, а в исследовательской части изучается концентрация напряжений в сварных узлах трубчатой фермы.</p>
+<div class="cards">
+<div class="card"><h4>Цель обзора</h4><p>Проанализировать состояние вопроса по теме ВКР и сформулировать задачи проектирования и исследования.</p></div>
+<div class="card"><h4>Объект</h4><p>Металлические конструкции грейферных перегружателей и кранов мостового типа.</p></div>
+<div class="card"><h4>Предмет</h4><p>Коробчатые и ферменные пролетные строения, узлы из прямоугольных труб, методы расчета и оптимизации.</p></div>
+</div>
+<div class="grid2">
+<figure class="fig"><img src="img/f1.png" alt="Схема мостового грейферного перегружателя">
+<p class="legend">1 – пролетное строение; 2 – жесткая опора; 3 – гибкая опора; 4 – грузовая тележка; 5 – грейфер (штриховой линией показано верхнее положение); 6 – приемный бункер</p><figcaption>Рисунок 1 – Схема мостового грейферного перегружателя</figcaption></figure>
+<figure class="tbl"><figcaption>Таблица 1 – Исходные данные для проектирования перегружателя</figcaption><div class="scroll"><table>
+<thead><tr><th>Параметр</th><th>Значение</th></tr></thead>
+<tbody><tr><td class="first">Грузоподъемность</td><td>16 т</td></tr>
+<tr><td class="first">Группа классификации (режим работы) крана</td><td>A7</td></tr>
+<tr><td class="first">Режим работы механизма подъема</td><td>M6</td></tr>
+<tr><td class="first">Режим работы механизма передвижения крана</td><td>M4</td></tr>
+<tr><td class="first">Режим работы механизма передвижения тележки</td><td>M6</td></tr>
+<tr><td class="first">Пролет L</td><td>40 м</td></tr>
+<tr><td class="first">Вылет консоли K</td><td>12 м</td></tr>
+<tr><td class="first">Вылет консоли K1</td><td>4 м</td></tr>
+<tr><td class="first">Высота крана H</td><td>20 м</td></tr>
+<tr><td class="first">Высота подъема h</td><td>28 м</td></tr>
+<tr><td class="first">Скорость подъема V1</td><td>0,5 м/с</td></tr>
+<tr><td class="first">Скорость передвижения крана V2</td><td>1,0 м/с</td></tr>
+<tr><td class="first">Скорость передвижения тележки V3</td><td>2,0 м/с</td></tr>
+<tr><td class="first">Варианты металлоконструкции</td><td>1) коробчатая; 2) ферменная из прямоугольных труб</td></tr></tbody></table></div></figure>
+</div>
+</div></section>
+
+<section id="structure"><div class="wrap">
+<h2><span class="n">02</span>Структура обзора и источники</h2>
+<p class="lead">Обзор оформлен как одна глава ВКР и выполнен по двум направлениям, предложенным научным руководителем: конструкции и методы проектирования.</p>
+<div class="grid2">
+<div>
+<ol class="num">
+<li>1.1 Грейферные перегружатели речных портов</li>
+<li>1.2 Нормативная база проектирования</li>
+<li>1.3 Обзор конструкций пролетных строений</li>
+<li>1.4 Обзор методов проектирования</li>
+<li>1.5 Патентный обзор</li>
+<li>1.6 Выводы по главе</li>
+</ol></div>
+<div class="cards" style="margin-top:16px;grid-template-columns:1fr 1fr">
+<div class="card"><div class="big">37</div><p>источников в списке</p></div>
+<div class="card"><div class="big">16</div><p>статей в отечественных и зарубежных журналах</p></div>
+<div class="card"><div class="big">6</div><p>стандартов ГОСТ и ISO</p></div>
+<div class="card"><div class="big">5</div><p>патентов и авторских свидетельств</p></div>
+</div></div>
+<p>Поиск выполнялся в научной электронной библиотеке eLIBRARY.RU, на платформах КиберЛенинка, ScienceDirect и SpringerLink, патенты искались в базах ФИПС и Google Patents.</p>
+</div></section>
+
+<section id="norms"><div class="wrap">
+<h2><span class="n">03</span>Нормативная база</h2>
+<p class="lead">Основной документ для расчета металлоконструкции: ГОСТ 33169-2022, разработанный с учетом ISO 20332:2016, EN 13001-3-1 и FEM 1.001 [<a href="#ref-12" class="cite">12</a>]. Узлы ферм из прямоугольных труб в крановых стандартах отдельно не регламентированы, для них применяются ISO 14347, руководства CIDECT и рекомендации IIW [<a href="#ref-13" class="cite">13</a>, <a href="#ref-15" class="cite">15</a>, <a href="#ref-16" class="cite">16</a>].</p>
+<figure class="tbl"><figcaption>Таблица 2 – Нормативные документы, применяемые при проектировании металлоконструкции перегружателя</figcaption><div class="scroll"><table>
+<thead><tr><th>Документ</th><th>Область применения в ВКР</th></tr></thead>
+<tbody><tr><td class="first">ГОСТ 34017-2016</td><td>Группа классификации крана A7 и режимы механизмов M4-M6</td></tr>
+<tr><td class="first">ГОСТ 32579.1-2013, ГОСТ 32579.5-2013</td><td>Расчетные нагрузки и комбинации нагрузок для крана мостового типа</td></tr>
+<tr><td class="first">ГОСТ 32578-2013</td><td>Выбор стали для элементов металлоконструкции</td></tr>
+<tr><td class="first">ГОСТ 33169-2022</td><td>Подтверждение прочности, устойчивости и сопротивления усталости</td></tr>
+<tr><td class="first">ISO 14347:2008</td><td>Расчет на усталость сварных узлов ферм из прямоугольных труб</td></tr>
+<tr><td class="first">CIDECT № 3, № 8</td><td>Конструирование узлов из прямоугольных труб, коэффициенты концентрации напряжений</td></tr>
+<tr><td class="first">Рекомендации IIW</td><td>Методы расчета сварных соединений на усталость</td></tr></tbody></table></div></figure>
+</div></section>
+
+<section id="constr"><div class="wrap">
+<h2><span class="n">04</span>Обзор конструкций</h2>
+<p class="lead">Металлоконструкция составляет основную часть массы перегружателя: у ПМГ-20 грузоподъемностью 20 т это 376,5 т из 615 т, около 61 % [<a href="#ref-7" class="cite">7</a>].</p>
+<div class="grid2">
+<div><figure class="fig"><img src="img/f2.png" alt="Поперечное сечение коробчатой балки" style="max-width:300px">
+<p class="legend">1 – верхний пояс; 2 – нижний пояс; 3 – стенка; 4 – продольное ребро; 5 – диафрагма; 6 – подтележечный рельс</p><figcaption>Рисунок 2 – Поперечное сечение коробчатой балки</figcaption></figure>
+<p>Коробчатая балка жесткая на изгиб и кручение и хорошо подходит для автоматической сварки, но тяжелее: толщины листов часто определяет местная устойчивость [<a href="#ref-17" class="cite">17</a>, <a href="#ref-18" class="cite">18</a>]. Слабым местом остаются сварные узлы: в местах ремонта верхнего пояса повторно возникали усталостные трещины, а выводные планки повысили усталостную прочность на 25-35 % [<a href="#ref-19" class="cite">19</a>].</p></div>
+<div><figure class="fig"><img src="img/f3.png" alt="Ферменная пролетная балка из прямоугольных труб">
+<p class="legend">а – вертикальная ферма; б – сечение пространственной балки; 1, 2 – пояса; 3 – стойка; 4 – раскос; 5 – рельс</p><figcaption>Рисунок 3 – Ферменная пролетная балка из прямоугольных труб</figcaption></figure>
+<p>Ферма из прямоугольных труб легче и меньше воспринимает ветер, сжатые стержни устойчивы, плоские грани удобны для примыкания раскосов [<a href="#ref-14" class="cite">14</a>, <a href="#ref-20" class="cite">20</a>]. Но каждый сварной узел является концентратором напряжений.</p></div>
+</div>
+<h3>Узлы ферм из прямоугольных труб</h3>
+<figure class="fig"><img src="img/f4.png" alt="Основные типы узлов плоских ферм из прямоугольных труб">
+<p class="legend">g – зазор между раскосами; θ – угол примыкания раскоса к поясу</p><figcaption>Рисунок 4 – Основные типы узлов плоских ферм из прямоугольных труб</figcaption></figure>
+<p>Наибольшие местные напряжения у края сварного шва возникают у углов профиля раскоса, где стенка жестче. Узлы с перекрытием раскосов имеют большую усталостную долговечность, чем узлы с зазором, хотя узлы с зазором проще в изготовлении [<a href="#ref-21" class="cite">21</a>].</p>
+<figure class="tbl"><figcaption>Таблица 3 – Сравнение коробчатой и ферменной металлоконструкции</figcaption><div class="scroll"><table>
+<thead><tr><th>Критерий</th><th>Коробчатая конструкция</th><th>Ферма из прямоугольных труб</th></tr></thead>
+<tbody><tr><td class="first">Масса</td><td>Больше, толщины листов часто определяются местной устойчивостью</td><td>Меньше за счет работы стержней преимущественно на растяжение и сжатие</td></tr>
+<tr><td class="first">Ветровая нагрузка</td><td>Большая площадь сплошной стенки</td><td>Меньше за счет сквозной решетки</td></tr>
+<tr><td class="first">Жесткость</td><td>Высокая изгибная и крутильная жесткость</td><td>Зависит от схемы решетки и жесткости узлов</td></tr>
+<tr><td class="first">Сварные узлы</td><td>Протяженные поясные швы, диафрагмы, ребра</td><td>Большое число узлов, каждый из которых является концентратором напряжений</td></tr>
+<tr><td class="first">Изготовление</td><td>Хорошо автоматизируется</td><td>Фигурная резка торцов раскосов, сварка по контуру примыкания</td></tr>
+<tr><td class="first">Определяющий вид отказа при режиме A7</td><td>Усталостные трещины в местах приварки диафрагм и в стыках</td><td>Усталостные трещины у края сварного шва в узлах</td></tr></tbody></table></div></figure>
+</div></section>
+
+<section id="methods"><div class="wrap">
+<h2><span class="n">05</span>Обзор методов проектирования</h2>
+<div class="cards">
+<div class="card"><h4>Нормы</h4><p>ГОСТ 33169-2022: усталость по номинальным напряжениям и пределам выносливости узлов; допускается МКЭ с осреднением напряжений [<a href="#ref-12" class="cite">12</a>].</p></div>
+<div class="card"><h4>Метод конечных элементов</h4><p>Стержневая модель отличается от детальной модели ANSYS примерно на 3 % по напряжениям; для узлов нужны оболочечные модели [<a href="#ref-7" class="cite">7</a>, <a href="#ref-24" class="cite">24</a>].</p></div>
+<div class="card"><h4>Оптимизация</h4><p>Минимум массы коробчатой балки с ребрами и диафрагмами; градиентные методы; топологическая оптимизация [<a href="#ref-26" class="cite">26</a>, <a href="#ref-17" class="cite">17</a>, <a href="#ref-27" class="cite">27</a>].</p></div>
+<div class="card"><h4>Сопротивление усталости</h4><p>Рекомендации IIW: номинальные, структурные и местные напряжения; локальный подход С. А. Соколова [<a href="#ref-16" class="cite">16</a>, <a href="#ref-29" class="cite">29</a>].</p></div>
+</div>
+<div class="grid2">
+<figure class="fig"><img src="img/f5.png" alt="Распределение напряжений у края сварного шва">
+<p class="legend">σном – номинальное; σстр – структурное; σмест – местное напряжение у края шва; t – толщина стенки</p><figcaption>Рисунок 5 – Распределение напряжений у края сварного шва</figcaption></figure>
+<div>
+<h3>Точность формул концентрации напряжений</h3>
+<div class="cards" style="grid-template-columns:1fr">
+<div class="card"><div class="big">в 2,5-3 раза</div><p>растет коэффициент концентрации с учетом реальной формы сварного шва [<a href="#ref-22" class="cite">22</a>]</p></div>
+<div class="card"><div class="big">до 2,75</div><p>раз опытные значения выше расчетных для раскосов K-узлов [<a href="#ref-21" class="cite">21</a>]</p></div>
+<div class="card"><div class="big">256</div><p>конечно-элементных моделей: у торца пояса формулы CIDECT завышают напряжения [<a href="#ref-32" class="cite">32</a>]</p></div>
+</div></div></div>
+</div></section>
+
+<section id="patents"><div class="wrap">
+<h2><span class="n">06</span>Патентный обзор</h2>
+<p class="lead">Патенты показывают два направления развития: повышение ресурса сварных балок и новые решения ферменных балок.</p>
+<figure class="tbl"><figcaption>Таблица 4 – Патенты по конструкциям пролетных балок кранов</figcaption><div class="scroll"><table>
+<thead><tr><th>Номер, страна</th><th>Название</th><th>Сущность решения</th></tr></thead>
+<tbody><tr><td class="first">SU 1648884 A1 [<a href="#ref-33" class="cite">33</a>]</td><td>Подкрановый путь (авторское свидетельство)</td><td>Балка коробчатого сечения с ребрами жесткости из сегментов трубы, вваренными во внутренние углы короба; цель: снижение металлоемкости</td></tr>
+<tr><td class="first">RU 2527597 C2 [<a href="#ref-34" class="cite">34</a>]</td><td>Способ повышения ресурса подкрановой балки</td><td>Замена сварных соединений ребер и тормозной балки в зоне под рельсом высокоресурсными болтовыми соединениями</td></tr>
+<tr><td class="first">RU 2654840 C1 [<a href="#ref-35" class="cite">35</a>]</td><td>Пролетная балка для мостового или козлового крана</td><td>Пространственная ферма с разъемно присоединенными пластинчатыми раскосами</td></tr>
+<tr><td class="first">US 9540216 B2 [<a href="#ref-36" class="cite">36</a>]</td><td>Кран с ферменной балкой и плоскими раскосами</td><td>Раскосы и стойки выполнены плоскими с отогнутыми боковыми полками и приварены к внутренним сторонам поясов</td></tr>
+<tr><td class="first">US 9796565 B2 [<a href="#ref-37" class="cite">37</a>]</td><td>Кран мостового или козлового типа с ферменной балкой</td><td>Концевые адаптеры, привариваемые к поясам фермы после выверки, позволяют компенсировать неточности изготовления</td></tr></tbody></table></div></figure>
+</div></section>
+
+<section id="results"><div class="wrap">
+<h2><span class="n">07</span>Выводы по главе и задачи ВКР</h2>
+<div class="grid2">
+<div><h3>Выводы</h3><ol class="num"><li>металлоконструкция составляет большую часть массы перегружателя, поэтому выбор ее типа и оптимизация сечений дают основной резерв снижения массы машины [<a href="#ref-7" class="cite">7</a>]</li>
+<li>коробчатая конструкция проще в изготовлении и надежнее по узлам, ферменная из прямоугольных труб легче и меньше воспринимает ветровую нагрузку, но содержит много сварных узлов, являющихся концентраторами напряжений [<a href="#ref-3" class="cite">3</a>, <a href="#ref-14" class="cite">14</a>, <a href="#ref-15" class="cite">15</a>]</li>
+<li>для кранов тяжелых режимов работы ресурс определяется усталостью сварных узлов, а не статической прочностью, что подтверждается опытом эксплуатации и патентными решениями [<a href="#ref-12" class="cite">12</a>, <a href="#ref-19" class="cite">19</a>, <a href="#ref-16" class="cite">16</a>, <a href="#ref-34" class="cite">34</a>]</li>
+<li>ГОСТ 33169-2022 рассчитывает усталость по номинальным напряжениям и пределам выносливости узлов, а методы структурных и местных напряжений у края сварного шва развиваются в международных рекомендациях и в работах отечественных авторов [<a href="#ref-12" class="cite">12</a>, <a href="#ref-15" class="cite">15</a>, <a href="#ref-16" class="cite">16</a>, <a href="#ref-29" class="cite">29</a>]</li>
+<li>стержневые модели достаточны для общего расчета, а для оценки узлов необходимы детальные конечно-элементные модели [<a href="#ref-7" class="cite">7</a>, <a href="#ref-24" class="cite">24</a>]</li>
+<li>параметрические формулы коэффициентов концентрации для узлов из прямоугольных труб имеют ограниченную область применения и в одних случаях занижают, а в других завышают напряжения [<a href="#ref-21" class="cite">21</a>, <a href="#ref-22" class="cite">22</a>, <a href="#ref-32" class="cite">32</a>]</li></ol></div>
+<div><h3>Задачи ВКР</h3><ul class="tick"><li>разработать коробчатый и ферменный варианты металлоконструкции перегружателя по исходным данным задания</li>
+<li>выполнить расчет вариантов на прочность, жесткость, упругую устойчивость и сопротивление усталости по ГОСТ 33169-2022</li>
+<li>сравнить варианты по массе и технологичности изготовления</li>
+<li>исследовать концентрацию напряжений в узлах ферменного варианта на детальной конечно-элементной модели и сопоставить результаты с параметрическими формулами CIDECT № 8 и ISO 14347</li>
+<li>разработать рекомендации по конструированию узлов с наименьшей концентрацией напряжений</li></ul>
+<figure class="fig"><img src="img/f6.png" alt="Схема вариантного проектирования металлоконструкции">
+<figcaption>Рисунок 6 – Схема вариантного проектирования металлоконструкции</figcaption></figure></div>
+</div>
+</div></section>
+
+<section id="presentation"><div class="wrap">
+<h2><span class="n">08</span>Презентация</h2>
+<p class="lead">Доклад по литературному обзору, дисциплина «История и методология науки». Листать можно кнопками или стрелками на клавиатуре.</p>
+<div class="viewer">
+<div class="stage"><img id="slide" src="img/slides/s-01.jpg" alt="Слайд 1"></div>
+<div class="ctrl"><button id="prev" type="button">Назад</button><span id="cnt">1 / 12</span><button id="next" type="button">Вперед</button></div>
+<div class="thumbs" id="thumbs"><img src="img/slides/s-01.jpg" data-i="0" alt="Слайд 1" loading="lazy" class="on"><img src="img/slides/s-02.jpg" data-i="1" alt="Слайд 2" loading="lazy"><img src="img/slides/s-03.jpg" data-i="2" alt="Слайд 3" loading="lazy"><img src="img/slides/s-04.jpg" data-i="3" alt="Слайд 4" loading="lazy"><img src="img/slides/s-05.jpg" data-i="4" alt="Слайд 5" loading="lazy"><img src="img/slides/s-06.jpg" data-i="5" alt="Слайд 6" loading="lazy"><img src="img/slides/s-07.jpg" data-i="6" alt="Слайд 7" loading="lazy"><img src="img/slides/s-08.jpg" data-i="7" alt="Слайд 8" loading="lazy"><img src="img/slides/s-09.jpg" data-i="8" alt="Слайд 9" loading="lazy"><img src="img/slides/s-10.jpg" data-i="9" alt="Слайд 10" loading="lazy"><img src="img/slides/s-11.jpg" data-i="10" alt="Слайд 11" loading="lazy"><img src="img/slides/s-12.jpg" data-i="11" alt="Слайд 12" loading="lazy"></div>
+</div>
+</div></section>
+
+<section id="files"><div class="wrap">
+<h2><span class="n">09</span>Файлы для скачивания</h2>
+<div class="files">
+<a class="file" href="files/Nikitin_Literaturnyi_obzor.pdf" target="_blank"><span class="ext">PDF</span><span>Реферат «Литературный обзор»<small>для просмотра</small></span></a>
+<a class="file" href="files/Nikitin_Literaturnyi_obzor.docx" download><span class="ext">DOCX</span><span>Реферат «Литературный обзор»<small>Microsoft Word</small></span></a>
+<a class="file" href="files/Nikitin_Prezentatsiya.pdf" target="_blank"><span class="ext">PDF</span><span>Презентация<small>для просмотра</small></span></a>
+<a class="file" href="files/Nikitin_Prezentatsiya.pptx" download><span class="ext">PPTX</span><span>Презентация<small>Microsoft PowerPoint</small></span></a>
+</div>
+</div></section>
+
+<section id="refs"><div class="wrap">
+<h2><span class="n">10</span>Список использованных источников</h2>
+<p class="lead">Оформлен по ГОСТ Р 7.0.100-2018, нумерация соответствует реферату.</p>
+<ol class="refs"><li id="ref-1">Стратегия развития внутреннего водного транспорта Российской Федерации на период до 2030 года : утверждена распоряжением Правительства Российской Федерации от 29 февраля 2016 г. № 327-р. – Текст : электронный // Министерство транспорта Российской Федерации : официальный сайт. – URL: <a href="https://mintrans.gov.ru/file/401139" target="_blank" rel="noopener">https://mintrans.gov.ru/file/401139</a> (дата обращения: 08.11.2026).</li>
+<li id="ref-2">Беглов, Б. В. Мостовые перегружатели / Б. В. Беглов, П. И. Кох, В. И. Онищенко. – Москва : Машиностроение, 1974. – 224 с. – Текст : непосредственный.</li>
+<li id="ref-3">Гохберг, М. М. Металлические конструкции подъемно-транспортных машин / М. М. Гохберг. – Ленинград : Машиностроение, 1976. – 453 с. – Текст : непосредственный.</li>
+<li id="ref-4">Соколов, С. А. Металлические конструкции подъемно-транспортных машин : учеб. пособие / С. А. Соколов. – Санкт-Петербург : Политехника, 2005. – 423 с. – Текст : непосредственный.</li>
+<li id="ref-5">Соколов, С. А. Строительная механика и металлические конструкции машин : учебник / С. А. Соколов. – Санкт-Петербург : Политехника, 2011. – Текст : непосредственный.</li>
+<li id="ref-6">Вершинский, А. В. Строительная механика и металлические конструкции / А. В. Вершинский, М. М. Гохберг, В. П. Семенов. – Ленинград : Машиностроение, 1984. – 232 с. – Текст : непосредственный.</li>
+<li id="ref-7">Гусев, Ю. Б. К вопросу об оптимальном синтезе элементов мостовых перегружателей / Ю. Б. Гусев, А. Ю. Танченко. – Текст : непосредственный // Вестник Национального технического университета «ХПИ». Тематический выпуск: Машиноведение и САПР. – 2008. – С. 45-68.</li>
+<li id="ref-8">ГОСТ 34017-2016. Краны грузоподъемные. Классификация режимов работы : межгосударственный стандарт : издание официальное : введ. впервые : дата введ. 2018-01-01. – Москва : Стандартинформ, 2017. – Текст : непосредственный.</li>
+<li id="ref-9">ГОСТ 32579.1-2013. Краны грузоподъемные. Принципы формирования расчетных нагрузок и комбинаций нагрузок. Часть 1. Общие положения : межгосударственный стандарт : издание официальное : дата введ. 2015-06-01. – Москва : Стандартинформ, 2015. – Текст : непосредственный.</li>
+<li id="ref-10">ГОСТ 32579.5-2013. Краны грузоподъемные. Принципы формирования расчетных нагрузок и комбинаций нагрузок. Часть 5. Краны мостового типа : межгосударственный стандарт : издание официальное : дата введ. 2015-06-01. – Москва : Стандартинформ, 2015. – Текст : непосредственный.</li>
+<li id="ref-11">ГОСТ 32578-2013. Краны грузоподъемные. Металлические конструкции. Требования к материалам : межгосударственный стандарт : издание официальное : дата введ. 2015-06-01. – Москва : Стандартинформ, 2015. – Текст : непосредственный.</li>
+<li id="ref-12">ГОСТ 33169-2022. Краны грузоподъемные. Металлические конструкции. Подтверждение несущей способности : межгосударственный стандарт : издание официальное : взамен ГОСТ 33169-2014 : дата введ. 2023-03-01. – Москва : Российский институт стандартизации, 2022. – Текст : непосредственный.</li>
+<li id="ref-13">ISO 14347:2008. Fatigue – Design procedure for welded hollow-section joints – Recommendations : international standard. – Geneva : ISO, 2008. – Direct text.</li>
+<li id="ref-14">Design guide for rectangular hollow section (RHS) joints under predominantly static loading / J. A. Packer, J. Wardenier, X.-L. Zhao [et al.]. – 2nd ed. – Geneva : CIDECT, 2009. – (Construction with hollow steel sections ; 3). – Direct text.</li>
+<li id="ref-15">Design guide for circular and rectangular hollow section welded joints under fatigue loading / X.-L. Zhao, S. Herion, J. A. Packer [et al.]. – Köln : TÜV-Verlag, 2001. – 121 p. – (Construction with hollow steel sections ; 8). – ISBN 3-8249-0565-5. – Direct text.</li>
+<li id="ref-16">Hobbacher, A. F. Recommendations for fatigue design of welded joints and components / A. F. Hobbacher. – 2nd ed. – Cham : Springer, 2016. – XVI, 143 p. – (IIW Collection). – DOI 10.1007/978-3-319-23757-2. – Direct text.</li>
+<li id="ref-17">Барановская, Л. В. Определение экстремальных значений компонентов напряженно-деформированного состояния крановых металлоконструкций коробчатого сечения градиентными методами / Л. В. Барановская, Н. М. Чернова. – Текст : непосредственный // Горное оборудование и электромеханика. – 2019. – № 5. – С. 3-7.</li>
+<li id="ref-18">Грачев, А. А. Устойчивость пластин с ребрами / А. А. Грачев, С. А. Соколов. – Текст : непосредственный // Научно-технические ведомости СПбГПУ. – 2010. – № 4 (110). – С. 200-204.</li>
+<li id="ref-19">Шепотько, В. П. Анализ конструктивного исполнения главных балок грузоподъемных кранов / В. П. Шепотько, П. А. Гавриш. – Текст : непосредственный // Восточно-Европейский журнал передовых технологий. – 2013. – Т. 2, № 7 (62). – С. 64-66. – DOI 10.15587/1729-4061.2013.12392.</li>
+<li id="ref-20">Hollow sections in structural applications / J. Wardenier, J. A. Packer, X.-L. Zhao, G. J. van der Vegte. – 2nd ed. – Geneva : CIDECT, 2010. – Direct text.</li>
+<li id="ref-21">Frater, G. S. Strain concentration factors in rectangular hollow section truss gap K-connections: an experimental study / G. S. Frater, J. A. Packer. – Direct text. // Journal of Constructional Steel Research. – 1993. – Vol. 24. – P. 77-104.</li>
+<li id="ref-22">Губайдулин, Р. Г. Исследование напряженного состояния сварных соединений бесфасоночных трубчатых узлов / Р. Г. Губайдулин, А. К. Тиньгаев, В. А. Лупин. – Текст : непосредственный // Вестник ЮУрГУ. Серия: Металлургия. – 2012. – Вып. 18, № 15. – С. 31-36.</li>
+<li id="ref-23">Гусев, Ю. Б. К вопросу моделирования напряженно-деформированного состояния металлоконструкции углеперегружателя / Ю. Б. Гусев, А. В. Литвиненко, А. Ю. Танченко. – Текст : непосредственный // Вестник Национального технического университета «ХПИ». Тематический выпуск: Транспортное машиностроение. – 2007. – № 33. – С. 41-45.</li>
+<li id="ref-24">Дульгер, Н. В. Конечно-элементная модель перегрузочного крана КПП 16/32т для перевалки грузов в речных и морских портах / Н. В. Дульгер, А. В. Кораблин. – Текст : непосредственный // Вестник Астраханского государственного технического университета. Серия: Морская техника и технология. – 2023. – № 4. – С. 104-114. – DOI 10.24143/2073-1574-2023-4-104-114.</li>
+<li id="ref-25">Многовариантный расчет механизма подъема груза крана мостового типа на ЭВМ / П. В. Витчук, В. А. Ермоленко, И. Д. Стадникова [и др.]. – Текст : непосредственный // Научно-технический вестник Брянского государственного университета. – 2022. – № 4. – С. 282-290. – DOI 10.22281/2413-9920-2022-08-04-282-290.</li>
+<li id="ref-26">Ren, Y. Mass optimization of crane box girder considering both ribs and diaphragms using APDL / Y. Ren, X. Liu, B. Wang. – Direct text. // International Journal of Steel Structures. – 2024. – Vol. 24, № 3. – P. 672-692. – DOI 10.1007/s13296-024-00846-3.</li>
+<li id="ref-27">Гнездилов, С. Г. Топологическая оптимизация на примере стрелы башенного крана / С. Г. Гнездилов, А. Н. Шубин. – Текст : непосредственный // Механизация строительства. – 2017. – Т. 78.</li>
+<li id="ref-28">Wu, Y. Fatigue life prediction of welded box girder structures / Y. Wu, W. Li, Q. Lan. – Direct text. // Advances in Mechanical Engineering. – 2017. – Vol. 9, № 10. – DOI 10.1177/1687814017728838.</li>
+<li id="ref-29">Sokolov, S. A. Analysis of the fatigue strength of welds in terms of local stress / S. A. Sokolov. – Direct text. // Russian Engineering Research. – 2018. – Vol. 38, № 3. – P. 151-156. – DOI 10.3103/S1068798X18030218.</li>
+<li id="ref-30">Методы определения локальных напряжений в сварных соединениях труб (обзор) / П. Н. Ткач, А. В. Молтасов, И. Г. Ткач, С. Н. Прокопчук. – Текст : непосредственный // Автоматическая сварка. – 2019. – № 3. – С. 55-63.</li>
+<li id="ref-31">Van Wingerde, A. M. SCF formulae for fatigue design of K-connections between square hollow sections / A. M. van Wingerde, J. A. Packer, J. Wardenier. – Direct text. // Journal of Constructional Steel Research. – 1997. – Vol. 43, № 1-3. – P. 87-118.</li>
+<li id="ref-32">Daneshvar, S. Stress concentration factors for RHS-to-RHS X-connections near an open chord end / S. Daneshvar, M. Sun, K. Tousignant. – Direct text. // Journal of Constructional Steel Research. – 2020. – Vol. 175. – Art. 106352.</li>
+<li id="ref-33">А. с. 1648884 СССР. Подкрановый путь : заявл. 15.08.1988 : опубл. 15.05.1991 / Кутищев В. П., Кутищев Е. В., Шалыганов А. В. ; заявитель Союзный строительно-монтажный трест «Южуралэнергострой». – Текст : непосредственный.</li>
+<li id="ref-34">Пат. 2527597 Российская Федерация, МПК B66C 6/00. Способ повышения ресурса подкрановой балки : № 2012115974 : заявл. 19.04.2012 : опубл. 10.09.2014 / Нежданов К. К., Нежданов А. К., Курткезов Д. Х. ; патентообладатель Пензенский государственный университет архитектуры и строительства. – Текст : непосредственный.</li>
+<li id="ref-35">Пат. 2654840 Российская Федерация. Пролетная балка для мостового или козлового крана и грузоподъемный кран, содержащий такую пролетную балку : заявл. 21.05.2015 : опубл. 22.05.2018 / Нолль Ш., Крайснер Р., Пассманн К., Шульте Ф., Шлирбах-Кноблох Т. – Текст : непосредственный.</li>
+<li id="ref-36">Pat. US 9540216 B2 United States. Crane having a truss girder with flattened braces : appl. 28.03.2013 : publ. 10.01.2017 / Paßmann C., Kreisner R., Karden M., Schlierbach-Knobloch T. ; assignee Terex MHPS IP Management GmbH. – URL: <a href="https://patents.google.com/patent/US9540216B2" target="_blank" rel="noopener">https://patents.google.com/patent/US9540216B2</a> (date of the application 08.11.2026). – Text : electronic.</li>
+<li id="ref-37">Pat. US 9796565 B2 United States. Crane, in particular an overhead crane or gantry crane, having at least one crane girder : appl. 28.03.2013 : publ. 24.10.2017 / Paßmann C., Kreisner R., Karden M., Schlierbach-Knobloch T. ; assignee Terex MHPS GmbH. – URL: <a href="https://patents.google.com/patent/US9796565B2" target="_blank" rel="noopener">https://patents.google.com/patent/US9796565B2</a> (date of the application 08.11.2026). – Text : electronic.</li></ol>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Никитин К. Л. · ИММиТ СПбПУ Петра Великого · Материалы ВКР «Вариантное проектирование грейферного перегружателя для речного порта»</div></footer>
+<script>
+(function(){
+  var imgs=[].slice.call(document.querySelectorAll('#thumbs img')), cur=0, main=document.getElementById('slide');
+  var prev=document.getElementById('prev'), next=document.getElementById('next'), cnt=document.getElementById('cnt');
+  function go(i){ if(i<0||i>=imgs.length) return; cur=i; main.src=imgs[i].src; main.alt='Слайд '+(i+1);
+    imgs.forEach(function(t,j){t.className=j===i?'on':'';}); cnt.textContent=(i+1)+' / '+imgs.length;
+    prev.disabled=i===0; next.disabled=i===imgs.length-1; var tb=document.getElementById('thumbs'); tb.scrollLeft=Math.max(0,imgs[i].offsetLeft-tb.offsetLeft-60); }
+  prev.onclick=function(){go(cur-1)}; next.onclick=function(){go(cur+1)};
+  imgs.forEach(function(t,i){t.onclick=function(){go(i)}});
+  document.addEventListener('keydown',function(e){ var r=document.getElementById('presentation').getBoundingClientRect();
+    if(r.top>window.innerHeight||r.bottom<0) return; if(e.key==='ArrowLeft') go(cur-1); if(e.key==='ArrowRight') go(cur+1); });
+  go(0);
+})();
+</script>
+</body>
+</html>
